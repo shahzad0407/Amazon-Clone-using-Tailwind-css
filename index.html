@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-">
+  <nav class='bg-slate-900 h-16 flex items-center justify-evenly'>
+    <img class="w-32 h-13 hover" src="/amazon_logo.png">
+    <div class="mb-2 ml-2 hover">
+      <p class="text-gray-200 smallfont">Deliver to</p>
+      <i class="fa-solid fa-location-dot" id="amazon" style="color: #f9fafb;"></i>
+      <strong class="text-white bigfont">Pakistan</strong>
+    </div>
+    <div class="flex">
+      <div class="drop-down">
+        <select class="w-14 h-10 ml-3 rounded-l-lg bg-gray-200 mb-3" name="cars" id="cars">
+          <option class="smallfont" value="volvo">All</option>
+          <option value="saab">Arts & Crafts</option>
+          <option value="opel">Automotive</option>
+          <option value="audi">Baby</option>
+          <option value="audi">Beauty and Personal Care</option>
+          <option value="audi">Books</option>
+          <option value="audi">Boy's Fashion</option>
+          <option value="audi">Computers</option>
+          <option value="audi">Deals</option>
+          <option value="audi">Digital Music</option>
+          <option value="audi">Electronics</option>
+          <option value="audi">Luggage</option>
+          <option value="audi">Girl's Fashion</option>
+        </select>
+      </div>
+      <input class="h-10 mb-3 searchbox" placeholder=" Search Amazon"></input>
+      <div class=" bg-orange-300 h-10 w-10 rounded-r-lg flex justify-center items-center">
+        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+      </div>
+    </div>
+    <div class="m-3 hover">
+      <p class="text-white p-0 m-0 smallfont">Hello,sign in</p>
+      <strong class="text-white p-0 m-0 bigfont">Accounts & Lists</strong>
+    </div>
+    <div class="m-3  hover">
+      <p class="text-white p-0 m-0 smallfont">Returns</p>
+      <strong class="text-white p-0 m-0 bigfont">& Orders</strong>
+    </div>
+    <div class="hover">
+      <strong class="text-orange-400 absolute ml-3 top-3">0</strong>
+      <i class="fa-solid fa-cart-shopping text-2xl" style="color: #ffffff;"></i>
+      <strong class="text-white bigfont m-3">Cart</strong>
+    </div>
+  </nav>
+  <nav class="bg-slate-800 h-10 flex">
+    <div class="flex items-center">
+      <i class="fa-solid fa-bars m-2 mr-0 text-xl" style="color: #ffffff;"></i>
+      <strong class="text-white m-2 ml-1">All</strong>
+      <p class="text-white m-2 belownav">Today's Deals</p>
+      <p class="text-white m-2 belownav">Customer Service</p>
+      <p class="text-white m-2 belownav">Registry</p>
+      <p class="text-white m-2 belownav">Gift Cards</p>
+      <p class="text-white m-2 belownav">Sell</p>
+    </div>
+  </nav>
+  <img id="image" src="/hero_image.jpg">
+  <div class="items grid grid-cols-4 gap-3">
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Clothing</strong>
+      <img class="m-auto w-72 h-80" src="/box1_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Beauty and Personal Care</strong>
+      <img class="m-auto w-72 h-80" src="/box2_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Furniture</strong>
+      <img class="m-auto w-72 h-80" src="/box3_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Mobile</strong>
+      <img class="m-auto w-72 h-80" src="/box4_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Beauty and Makeup</strong>
+      <img class="m-auto w-72 h-80" src="/box5_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Cat & Dog Food</strong>
+      <img class="m-auto w-72 h-80" src="/box6_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Children's Accesories</strong>
+      <img class="m-auto w-72 h-80" src="/box7_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+    <div class="box">
+      <strong class="ml-5 text-lg font-bold">Fashion</strong>
+      <img class="m-auto w-72 h-80" src="/box8_image.jpg">
+      <a class="ml-5 text-sm">See more</a>
+    </div>
+  </div>
+  <div class="w-full h-11 bg-white mt-8"></div>
+  <div id="sign-in" class="flex flex-col items-center justify-center h-36">
+    <p class="text-sm font-medium">See personalized recommendations</p>
+    <button id="sign-in-button" class="text-sm font-semibold bg-amber-500 h-7 w-64 m-1">Sign in</button>
+    <p class="text-xs">New customer?<a class="text-xs"> Start here</a></p>
+  </div>
+  <div id="sign-in-below" class="h-6 bg-white"></div>
+  <a id="back-to-top" class="h-10 flex flex-col items-center justify-center text-white">
+    <button class="text-sm">Back to top</button>
+  </a>
+  <div id="foot-panel" class="h-96 flex items-center justify-evenly">
+    <div class="text-white">
+      <strong>Get to know us</strong>
+      <p class="text-sm mt-2 mb-2">Careers</p>
+      <p class="text-sm mt-2 mb-2">Blog</p>
+      <p class="text-sm mt-2 mb-2">About Amazon</p>
+      <p class="text-sm mt-2 mb-2">Investor Relations</p>
+      <p class="text-sm mt-2 mb-2">Amazon Devices</p>
+      <p class="text-sm mt-2 mb-2">Amazon Science</p>
+    </div>
+    <div class="text-white">
+      <strong>Get to know us</strong>
+      <p class="text-sm mt-2 mb-2">Careers</p>
+      <p class="text-sm mt-2 mb-2">Blog</p>
+      <p class="text-sm mt-2 mb-2">About Amazon</p>
+      <p class="text-sm mt-2 mb-2">Investor Relations</p>
+      <p class="text-sm mt-2 mb-2">Amazon Devices</p>
+      <p class="text-sm mt-2 mb-2">Amazon Science</p>
+    </div>
+    <div class="text-white">
+      <strong>Get to know us</strong>
+      <p class="text-sm mt-2 mb-2">Careers</p>
+      <p class="text-sm mt-2 mb-2">Blog</p>
+      <p class="text-sm mt-2 mb-2">About Amazon</p>
+      <p class="text-sm mt-2 mb-2">Investor Relations</p>
+      <p class="text-sm mt-2 mb-2">Amazon Devices</p>
+      <p class="text-sm mt-2 mb-2">Amazon Science</p>
+    </div>
+    <div class="text-white">
+      <strong>Get to know us</strong>
+      <p class="text-sm mt-2 mb-2">Careers</p>
+      <p class="text-sm mt-2 mb-2">Blog</p>
+      <p class="text-sm mt-2 mb-2">About Amazon</p>
+      <p class="text-sm mt-2 mb-2">Investor Relations</p>
+      <p class="text-sm mt-2 mb-2">Amazon Devices</p>
+      <p class="text-sm mt-2 mb-2">Amazon Science</p>
+    </div>
+  </div>
+  <div id="foot-2" class="h-24 flex items-center justify-center">
+    <img class="w-31 h-14" src="/amazon_logo.png">
+  </div>
+  <footer class="flex flex-col items-center justify-center p-3 pb-6">
+    <div>
+      <button class="text-xs m-1">Copyright Of Use</button>
+      <button class="text-xs m-1">Privacy Notice</button>
+      <button class="text-xs m-1">Your Ads Privacy Choices</button>
+    </div>
+    <div>
+      <p class="text-xs m-1">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    </div>
+  </footer>
+</body>
+</html>
